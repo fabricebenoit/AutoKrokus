@@ -3,66 +3,83 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
     <title>Autokrokus by fabricebenoit</title>
   </head>
 
   <body>
-    <a id="forkme_banner" href="https://github.com/fabricebenoit/AutoKrokus">View on GitHub</a>
-    <div class="shell">
+    <header>
+      <div class="inner">
+        <h1>Autokrokus</h1>
+        <h2>Arduino Based RC Enlarger Timer</h2>
+        <a href="https://github.com/fabricebenoit/AutoKrokus" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Autokrokus</h1>
-            <h2>Arduino Based RC Enlarger Timer</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>AutoKrokus</h1>
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/fabricebenoit/AutoKrokus/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/fabricebenoit/AutoKrokus/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
+<p><em>Arduino based RC f/stop Enlarger Timer</em></p>
 
+<p>See <a href="http://fabricator.blog.com/2013/01/23/autokrokus/">AutoKrokus HomePage</a> (French) or 
+<a href="http://fabricebenoit.github.com/AutoKrokus/">AutoKrokus GitHub Page</a> (English) for more details about this project.</p>
 
-      <span class="banner-fix"></span>
+<h2>Features</h2>
 
+<ul>
+<li>
+<strong>Remote Controled</strong>: A 433MHz Rx/Tx kit is used.</li>
+<li>
+<strong>Test Stripes Mode</strong>: Given a base exposure time and a f/stop range, calculates stripes exposures times and expose them, notify the user when he has to move the mask to next stripe.</li>
+<li>
+<strong>Exposure Mode</strong>: Exposition can be paused and continued.</li>
+<li>
+<strong>Chemistry Timer</strong>: Notify the user when it's time to go to the next processing step.</li>
+<li>
+<strong>Red Light Handler</strong> Set red light low during paper placement and exposure, set it gradually higher during processing.</li>
+</ul><h2>Hardware</h2>
 
-      <section id="main_content">
-        <h1>AutoKrokus</h1>
-      </section>
+<p>You will need two Arduinos to build this project.
+I choosed an Arduino UNO for the enlarger and an Arduino Mini for the remote controller.</p>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/fabricebenoit">fabricebenoit</a> can be found on <a href="https://github.com/fabricebenoit/AutoKrokus">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
+<p>Test sketches are </p>
 
+<ul>
+<li>
+<strong>KrokusRemoteTest</strong> for the remote controller Hardware Test</li>
+<li>
+<strong>KrokusRemoteTestRx</strong> to log the data transmitted by the controller</li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/fabricebenoit/AutoKrokus/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/fabricebenoit/AutoKrokus/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/fabricebenoit/AutoKrokus"></a> is maintained by <a href="https://github.com/fabricebenoit">fabricebenoit</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
 
-    
+  
   </body>
 </html>
