@@ -58,19 +58,19 @@ void loop(){
   
   // Le joystick ne peut prendre qu'une position à la fois -> else if interromp les tests si un des boutons est pressé.
   
-  if(!digitalRead(pinHaut)){
+  if(digitalRead(pinHaut)){
      message433 += "H";
    }else 
-   if(!digitalRead(pinCentre)){
+   if(digitalRead(pinCentre)){
      message433 += "C";
    }else 
-   if(!digitalRead(pinGauche)){
+   if(digitalRead(pinGauche)){
      message433 += "G";
    }else 
-   if(!digitalRead(pinBas)){
+   if(digitalRead(pinBas)){
      message433 += "B";
    }else 
-   if(!digitalRead(pinDroite)){
+   if(digitalRead(pinDroite)){
      message433 += "D";
    }else{
      message433 += "0";
@@ -120,4 +120,5 @@ void loop(){
    lcd.setCursor(1,16);
    lcd.print("0");
    delay(1000);
+   
 }
