@@ -24,4 +24,4 @@ I choosed an Arduino UNO for the enlarger and an Arduino Mini for the remote con
 Test sketches are 
 
 - **KrokusRemoteTest** for the remote controller Hardware Test
-- **KrokusRemoteTestRx** to log the data transmitted by the controller
+- **KrokusRemoteTestRx** to log the data transmitted by the controller during the test
